@@ -1,0 +1,249 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.header {
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: -webkit-fill-available;
+    padding: .3rem;
+    user-select: none;
+}
+
+.grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    border: .9px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.col:hover {
+    background: rgba(150, 200, 200, .7);
+}
+
+.canvas-modes {
+    display: flex;
+    gap: 10px;
+    margin-right: 3rem;
+}
+
+.pointA {
+    background: blue !important;
+}
+.pointA:hover {
+    background: rgb(0, 0, 150) !important;
+}
+
+.pointB {
+    background: red !important;
+}
+.pointB:hover {
+    background: rgb(150, 0, 0) !important;
+}
+
+.obstacle {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+.obstacle:hover {
+    background: black !important;
+}
+
+.open {
+    background: rgba(172, 255, 47, 0.3);
+}
+.open:hover{
+    background: rgba(0, 128, 0, 0.3);
+}
+
+.close {
+    background: rgb(170, 0, 0, 0.3);
+}
+.close:hover{
+    background: rgb(100, 0, 0.3);
+}
+
+.clear {
+    background: pink;
+}
+
+.path {
+    position: relative;
+    /* background-color: blueviolet; */
+}
+
+.col .desc {
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    padding: .3rem;
+    justify-content: space-between;
+}
+
+.desc .header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.desc .body {
+    text-align: center;
+    font-size: 15px;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+    cursor: pointer
+}
+
+.selected {
+    outline: 3px solid yellow;
+}
+
+.START .col:hover {
+    background: rgb(0, 0, 150);
+}
+
+.END .col:hover {
+    background: rgb(150, 0, 0);
+}
+
+.OBSTACLE .col:hover {
+    background: black;
+}
+
+.CLEAR .col:hover {
+    background: none !important;
+}
+
+.line {
+    position: absolute;
+    left: calc(50%);
+    transform: translate(-50%,-50%);
+    transform-origin: left center;
+    z-index: 10000;
+}
+
+.btn {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.btn.reset:hover {
+    background: rgba(255, 0, 0, 0.3);
+}
+.btn.generate-obstacles:hover {
+    background: rgba(0, 128, 0, 0.3)
+}

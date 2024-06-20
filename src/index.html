@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="grid" class="container roboto-regular">
+			<div class="header">
+				<div class="control">
+					<label for="rows">Filas</label>
+					<input type="number" name="rows" id="rows" value="10" />
+				</div>
+				<div class="control">
+					<label for="cols">Columnas</label>
+					<input type="number" name="cols" id="cols" value="10" />
+				</div>
+				<div class="canvas-modes">
+					<div class="control a-center">
+						<label>Inicio</label>
+						<div id="start" class="pointA block"></div>
+					</div>
+					<div class="control a-center">
+						<label>Final</label>
+						<div id="end" class="pointB block"></div>
+					</div>
+					<div class="control a-center">
+						<label>Obstaculo</label>
+						<div id="obstacle" class="obstacle block"></div>
+					</div>
+				</div>
+				<div class="control a-center">
+					<label>Borrar</label>
+					<div id="clear" class="clear block"></div>
+				</div>
+			</div>
+			<div>
+				<button id="reset" class="cursor-pointer btn reset">
+					Borrar todo
+				</button>
+				<button
+					id="generate-obstacles"
+					class="cursor-pointer btn generate-obstacles"
+				>
+					Generar con obstaculos
+				</button>
+			</div>
+		</div>
+		<script src="js/utils.js"></script>
+		<script src="js/mixins.js"></script>
+		<script src="js/classes.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
